@@ -4,16 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace webproduct_2.Controllers
+namespace MvcDemo.Controllers
 {
-    public class ProductController : Controller
+    public class HomeController : Controller
     {
-        
+        // GET: Home
         public ActionResult Index()
         {
-           AWEntities ctx = new AWEntities();
+            AdventureWorks2017Entities ctx = new AdventureWorks2017Entities();
             var products = ctx.Products.ToList();
-
             return View(products);
         }
     }
