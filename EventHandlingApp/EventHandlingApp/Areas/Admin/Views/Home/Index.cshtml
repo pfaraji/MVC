@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron text-center">
+    <h2>به بخش مدیریت رویداد آسان خوش آمدید</h2>
+
+</div>
+<div class="row text-center">
+    <div class="col-md-4">
+        
+        @Html.ActionLink("مدیریت مشتریان", "Index", "Customers", new { area = "Admin" }, new { @class = "navbar-brand" })
+    </div>
+    <div class="col-md-4">
+        @Html.ActionLink("مدیریت رویدادها", "Index", "Events", new { area = "Admin" }, new { @class = "navbar-brand" })
+
+    </div>
+    <div class="col-md-4">
+        <h4>مدیریت کارکنان</h4>
+    </div>
+</div>

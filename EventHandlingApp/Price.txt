@@ -1,0 +1,1 @@
+   public double Price { get { return (receptionPackage.Price * Participants) + Location.Rent; } }
